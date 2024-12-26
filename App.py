@@ -2,6 +2,9 @@ import tkinter
 from tkinter import *
 from tkinter import ttk
 
+# functions
+def Exit():
+    exit()
 
 
 # Tools Design
@@ -24,7 +27,7 @@ inputs.grid(row=1,column=2,padx=10,pady=10,columnspan=2,sticky="we",ipady=10)
 show =ttk.Button(App,text="Show Products",width=28)
 show.grid(row=2,column=0,padx=10,pady=10,columnspan=2,sticky="we",ipady=10)
 
-Exit =ttk.Button(App,text="Exit",width=28)
+Exit =ttk.Button(App,text="Exit",width=28,command=Exit)
 Exit.grid(row=2,column=2,padx=10,pady=10,columnspan=2,sticky="we",ipady=10)
 
 App.mainloop()
